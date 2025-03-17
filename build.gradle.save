@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.tu.paquete'  // Cambia esto con el nombre de tu grupo
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter:2.5.4' // Ejemplo de dependencia. Cambia según las que necesites.
+}
+
+application {
+    mainClassName = 'com.tu.paquete.Main'  // Reemplaza con la ruta completa de tu clase principal
+}
+
+test {
+    useJUnitPlatform()
+}
+
